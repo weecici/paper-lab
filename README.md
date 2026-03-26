@@ -27,10 +27,17 @@ To set up the environment, follow these steps:
    ```
 
 2. Let astral-uv handle the environment setup:
+
    ```bash
    uv sync
    ```
 
+3. If you want to run test cases, you can execute:
+
+   ```bash
+   uv run pytest <path/to/test/cases>
+   ```
+
 ## License
 
-Please refer to the <a href="LICENSE">LICENSE</a> for details on the licensing of this project.
+Please refer to the [LICENSE](LICENSE) for details on the licensing of this project.
