@@ -1,9 +1,9 @@
 import torch
 import torchinfo
-from dl_models.transformer.model import Transformer
+from paper_lab.paper_001 import Transformer
 
 
-if __name__ == "__main__":
+def test_forward_pass():
     batch_size = 2
     src_seq_length = 10
     tgt_seq_length = 9

@@ -3,8 +3,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch import Tensor
 
-from ._const import *
-
 
 class PositionalEncoding(nn.Module):
     def __init__(self, d_model: int, max_len: int, dropout: float):

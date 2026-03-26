@@ -3,8 +3,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch import Tensor
 
-from ._attn import MultiHeadAttention
-from ._ffn import FeedForwardNet
+from .components.attn import MultiHeadAttention
+from .components.ffn import FeedForwardNet
 
 
 class EncoderLayer(nn.Module):

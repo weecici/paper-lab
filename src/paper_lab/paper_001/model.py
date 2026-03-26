@@ -6,9 +6,9 @@ import torch.nn.functional as F
 from torch import Tensor, LongTensor
 
 from .layer import EncoderLayer, DecoderLayer
-from ._pe import PositionalEncoding
-from ._utils import get_pad_mask, get_subsequent_mask
-from ._const import *
+from .components.pe import PositionalEncoding
+from .components.seq_mask import get_pad_mask, get_subsequent_mask
+from .const import *
 
 
 class Encoder(nn.Module):
